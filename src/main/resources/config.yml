@@ -1,0 +1,29 @@
+userName: zhangsan
+age: 18
+
+# emails as list
+emails:
+  - hastin@163.com
+  - stick2000@sina.com
+
+emailInterfaces:
+  - !org.oursight.learning.spring.data.config.yaml.EmailImplV1
+    name: email\:v1
+  - !org.oursight.learning.spring.data.config.yaml.EmailImplV1
+      name: email\:v2
+
+phones:
+  - !org.oursight.learning.spring.data.config.yaml.Phone
+    name: home
+    number: 110
+  - !org.oursight.learning.spring.data.config.yaml.Phone
+    name: work
+    number: 120
+
+stringMap:
+  a1: aaastr
+  b1: bbbstr
+
+intMap:
+  a1: 1
+  b1: 2
