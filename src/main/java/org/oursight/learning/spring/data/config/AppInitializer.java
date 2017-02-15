@@ -14,7 +14,7 @@ public class AppInitializer implements WebApplicationInitializer {
 
 
         AnnotationConfigWebApplicationContext ctx = new AnnotationConfigWebApplicationContext();
-        ctx.register(YamlConfiguration.class);
+        //ctx.register(YamlConfiguration.class);
         ctx.setServletContext(container);
         ctx.register(ApplicationContext.class);
 

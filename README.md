@@ -1,25 +1,11 @@
 About this project
 ----------------
-This is a spring data integrated with JPA demo.
+This is a spring example of using aop.
 
-Follow belong tutorials:
-- A very simple demo (without using spring data):  
-http://www.journaldev.com/7655/spring-orm-example-with-jpa-hibernate-transactions
-- An advanced demo using spring data:  
-http://fruzenshtein.com/spring-jpa-data-hibernate-mysql/
-
-**JPA implementation without spring data**
-- use JpaConfiguration instead of HibernateConfiguration
-- user JpsUserDao instead of UserDao
-
-**JPA implementation with spring data**
-- JpaConfiguration.java declares @EnableJpaRepositories
-- declares UserRepository in package org.oursight.learning.jpa.repository
-- Use UserRepository in JpaController, which url mapping to http://localhost:8080/jpa/list and jpa/new
-
-
-How to build
-------------
+key points:
+- pom.xml: add some AspectJ dependency
+- ApplicationContext.java: @EnableAspectJAutoProxy, add aop package in scan package: org.oursight.learning.spring.aop
+- TestAspect.java: 自定义的一个, 必须同时声明 @Component，@Aspect才能生效
 
 
 How to run
