@@ -15,7 +15,9 @@ How to run
 2. mvn jetty:run  
 If you want to run it in Tomcat, make sure that you are using the version above Tomcat 8.0 -- no need of web.xml at all
 
-3. open your browser and access http://localhost:8080
+3. open your browser and access  
+http://localhost:8080/api/test/v1/ping，ping1，ping2，ping3
+http://localhost:8080/api/test1/v1/ping，ping1，ping2，ping3
 just follow the yellow brick road
 
 
